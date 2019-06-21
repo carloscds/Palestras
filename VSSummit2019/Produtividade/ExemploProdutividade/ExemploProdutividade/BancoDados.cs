@@ -9,7 +9,7 @@ namespace ExemploProdutividade
 {
     public class BancoDados
     {
-        private List<Cliente> _clientes;
+        private readonly List<Cliente> _clientes;
 
         public BancoDados()
         {
@@ -21,14 +21,14 @@ namespace ExemploProdutividade
             _clientes.Add(cliente);
         }
 
-        public void AddBatch(List<Cliente> clientes)
+        public void AddUmMontaoDeUmaVezSo_EmHomenagemAo_RafaelAlmeida(List<Cliente> clientes)
         {
             _clientes.AddRange(clientes);
         }
 
         public Cliente GetByID(int id)
         {
-            return _clientes.Where(c => c.ID == id).FirstOrDefault();
+            return _clientes.FirstOrDefault(c => c.ID == id);
         }
 
         public int Count() => _clientes.Count;

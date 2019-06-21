@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ExemploProdutividade.Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ExemploProdutividade.Test
@@ -31,7 +32,7 @@ namespace ExemploProdutividade.Test
             clientes.Add(new Cliente() { ID = 3, Nome = "Maria", Cidade = "NY" });
             clientes.Add(new Cliente() { ID = 4, Nome = "Pedro", Cidade = "SEA" });
             clientes.Add(new Cliente() { ID = 5, Nome = "Jose", Cidade = "CPP" });
-            db.AddBatch(clientes);
+            db.AddUmMontaoDeUmaVezSo_EmHomenagemAo_RafaelAlmeida(clientes);
             Assert.AreEqual(db.Count(), 5);
         }
     }

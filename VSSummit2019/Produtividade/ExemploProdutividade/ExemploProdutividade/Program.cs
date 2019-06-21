@@ -19,7 +19,7 @@ namespace ExemploProdutividade
             clientes.Add(new Cliente() { ID = 3, Nome = "Maria", Cidade = "NY" });
             clientes.Add(new Cliente() { ID = 4, Nome = "Pedro", Cidade = "SEA" });
             clientes.Add(new Cliente() { ID = 5, Nome = "Jose", Cidade = "CPP" });
-            db.AddBatch(clientes);
+            db.AddUmMontaoDeUmaVezSo_EmHomenagemAo_RafaelAlmeida(clientes);
 
             var cli = new Cliente() { ID = 6, Nome = "Antonio", Cidade = "NY" };
             db.Add(cli);
