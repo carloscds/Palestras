@@ -1,0 +1,16 @@
+GET https://localhost:5001/api/funcionario
+
+###
+
+GET https://boavistaapi.azurewebsites.net/api/funcionario
+
+###
+ 
+POST https://localhost:5001/api/funcionario 
+content-type: application/json
+
+{
+    "Nome" : "Manoel",
+    "Salario" : 1000
+}
+
